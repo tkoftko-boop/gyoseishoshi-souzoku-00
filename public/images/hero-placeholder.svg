@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="heroPlaceholderTitle">
+  <title id="heroPlaceholderTitle">行政書士による相談の様子（差し替え予定の仮画像）</title>
+
+  <rect width="800" height="600" rx="24" fill="#eef2f7"/>
+
+  <!-- table -->
+  <rect x="140" y="400" width="520" height="24" rx="8" fill="#d7e0e9"/>
+  <rect x="180" y="424" width="16" height="90" fill="#d7e0e9"/>
+  <rect x="604" y="424" width="16" height="90" fill="#d7e0e9"/>
+
+  <!-- document on table -->
+  <rect x="360" y="360" width="90" height="60" rx="4" fill="#ffffff" stroke="#c3ccd6" stroke-width="2"/>
+  <line x1="374" y1="376" x2="436" y2="376" stroke="#c3ccd6" stroke-width="3"/>
+  <line x1="374" y1="390" x2="420" y2="390" stroke="#c3ccd6" stroke-width="3"/>
+  <circle cx="428" cy="402" r="7" fill="#b8862f" opacity="0.6"/>
+
+  <!-- advisor figure (left) -->
+  <circle cx="290" cy="230" r="46" fill="#1c3352"/>
+  <path d="M210 400c0-58 36-104 80-104s80 46 80 104" fill="#274b74"/>
+
+  <!-- client figure (right) -->
+  <circle cx="510" cy="240" r="42" fill="#9aa7b5"/>
+  <path d="M440 400c0-52 32-92 70-92s70 40 70 92" fill="#b7c1cd"/>
+
+  <!-- soft accent circle -->
+  <circle cx="670" cy="120" r="34" fill="#b8862f" opacity="0.18"/>
+  <circle cx="110" cy="500" r="26" fill="#1c3352" opacity="0.08"/>
+</svg>
