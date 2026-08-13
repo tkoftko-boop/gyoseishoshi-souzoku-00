@@ -255,6 +255,114 @@ img {
   display: none;
 }
 
+/* ---------- Shared section layout ---------- */
+.section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+}
+
+.section-title {
+  margin: 0 0 2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-navy-900);
+  text-align: center;
+}
+
+/* ---------- Worries ---------- */
+.worries {
+  background-color: var(--color-bg);
+}
+
+.worry-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.worry-card {
+  padding: 1.25rem 1.5rem;
+  background-color: var(--color-bg-soft);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 6px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+/* ---------- Support ---------- */
+.support {
+  background-color: var(--color-bg-soft);
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.support-card {
+  padding: 1.75rem;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.support-card-title {
+  margin: 0 0 0.6rem;
+  font-size: 1.1rem;
+  color: var(--color-navy-900);
+}
+
+.support-card-text {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--color-text-sub);
+}
+
+.support-note {
+  margin: 1.75rem 0 0;
+  font-size: 0.85rem;
+  color: var(--color-text-sub);
+}
+
+/* ---------- Reasons ---------- */
+.reasons {
+  background-color: var(--color-bg);
+}
+
+.reason-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.reason-card {
+  padding: 1.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.reason-number {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.reason-card-title {
+  margin: 0 0 0.6rem;
+  font-size: 1.1rem;
+  color: var(--color-navy-900);
+}
+
+.reason-card-text {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--color-text-sub);
+}
+
 /* ---------- Tablet / Desktop ---------- */
 @media (min-width: 768px) {
   :root {
@@ -327,10 +435,35 @@ img {
   .hero-description {
     font-size: 1.1rem;
   }
+
+  .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .worry-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .support-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reason-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (min-width: 1024px) {
   .hero-title {
     font-size: 2.75rem;
+  }
+
+  .worry-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .support-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
