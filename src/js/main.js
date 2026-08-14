@@ -17,3 +17,20 @@
     }
   });
 })();
+
+// FAQアコーディオンの開閉
+(function () {
+  var triggers = document.querySelectorAll(".faq-trigger");
+
+  triggers.forEach(function (trigger) {
+    trigger.addEventListener("click", function () {
+      var isOpen = trigger.getAttribute("aria-expanded") === "true";
+      var answer = document.getElementById(trigger.getAttribute("aria-controls"));
+
+      trigger.setAttribute("aria-expanded", String(!isOpen));
+      if (answer) {
+        answer.hidden = isOpen;
+      }
+    });
+  });
+})();
