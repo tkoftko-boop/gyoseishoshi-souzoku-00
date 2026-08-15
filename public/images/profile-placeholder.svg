@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="profilePlaceholderTitle">
+  <title id="profilePlaceholderTitle">代表行政書士 山田太郎（仮）のプロフィール写真（差し替え予定の仮画像）</title>
+
+  <rect width="400" height="400" rx="16" fill="#eef2f7"/>
+
+  <!-- person silhouette -->
+  <circle cx="200" cy="160" r="70" fill="#1c3352"/>
+  <path d="M80 400c0-90 54-160 120-160s120 70 120 160" fill="#274b74"/>
+
+  <!-- soft accent -->
+  <circle cx="330" cy="70" r="26" fill="#b8862f" opacity="0.2"/>
+</svg>
