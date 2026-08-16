@@ -18,6 +18,10 @@
 
 https://tkoftko-boop.github.io/gyoseishoshi-souzoku-00/
 
+## Preview
+
+![Desktop Preview](screenshots/desktop.png)
+
 ---
 
 ## Project Overview
