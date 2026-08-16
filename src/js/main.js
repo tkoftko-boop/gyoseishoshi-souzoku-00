@@ -34,3 +34,35 @@
     });
   });
 })();
+
+// トップへ戻るボタンの表示切替
+(function () {
+  var backToTop = document.getElementById("back-to-top");
+  if (!backToTop) return;
+
+  var showAfter = window.innerHeight;
+  var isMobile = window.matchMedia("(max-width: 767px)");
+  var faqInView = false;
+
+  function updateVisibility() {
+    var hideForFaq = isMobile.matches && faqInView;
+    backToTop.classList.toggle("is-visible", window.scrollY > showAfter && !hideForFaq);
+  }
+
+  window.addEventListener("scroll", updateVisibility, { passive: true });
+  updateVisibility();
+
+  backToTop.addEventListener("click", function () {
+    window.scrollTo(0, 0);
+  });
+
+  // モバイル表示時、FAQセクションが画面内にある間はボタンを隠す
+  var faqSection = document.getElementById("faq");
+  if (faqSection && "IntersectionObserver" in window) {
+    var faqObserver = new IntersectionObserver(function (entries) {
+      faqInView = entries[0].isIntersecting;
+      updateVisibility();
+    });
+    faqObserver.observe(faqSection);
+  }
+})();
