@@ -7,8 +7,8 @@
   --color-navy-900: #1c3352;
   --color-navy-700: #274b74;
   --color-navy-100: #eef2f7;
-  --color-accent: #b8862f;
-  --color-accent-dark: #9a6f26;
+  --color-accent: #936b26;
+  --color-accent-dark: #7a5920;
   --color-bg: #ffffff;
   --color-bg-soft: #f6f8fa;
   --color-text: #253241;
@@ -791,6 +791,13 @@ img {
   font-size: 0.9rem;
   color: #ffffff;
   opacity: 0.85;
+}
+
+.final-cta-note {
+  margin: 1.25rem 0 0;
+  font-size: 0.8rem;
+  color: #ffffff;
+  opacity: 0.65;
 }
 
 /* ---------- Footer ---------- */
