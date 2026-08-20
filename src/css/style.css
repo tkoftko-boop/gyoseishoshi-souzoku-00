@@ -793,6 +793,13 @@ img {
   opacity: 0.85;
 }
 
+.final-cta-note {
+  margin: 1.25rem 0 0;
+  font-size: 0.8rem;
+  color: #ffffff;
+  opacity: 0.65;
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   background-color: var(--color-navy-900);
